@@ -1,0 +1,13 @@
+#indexcss {
+    list-style-type: none;
+}
+#indexcss>table {
+    padding:5px;
+    background-color: #191919;
+    border-radius: 5px;
+    margin: -0px;
+    color: #ffffff;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
