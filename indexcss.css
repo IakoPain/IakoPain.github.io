@@ -1,13 +1,12 @@
-#indexcss {
-    list-style-type: none;
+.topnav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
-#indexcss>table {
-    padding:5px;
-    background-color: #191919;
-    border-radius: 5px;
-    margin: -0px;
-    color: #ffffff;
-    text-align: center;
-    border-collapse: collapse;
-    width: 100%;
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
 }
