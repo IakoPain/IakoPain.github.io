@@ -1,0 +1,61 @@
+.topnav {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.midnav {
+    background-color: #666666;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.midnav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.moi .topnav .active {
+	background-color:#56bf8c;
+}
+
+.moi .midnav .active {
+	background-color:#65c273;
+}
+
+.etudes_et_pro .topnav .active {
+	background-color:#56bf8c;
+}
+
+.etudes_et_pro .midnav .active {
+	background-color:#65c273;
+}
+
+.projets_pro .topnav .active {
+	background-color:#4792ad;
+}
+
+.projets_pro .midnav .active {
+	background-color:#70adb3;
+}
+
+.projets_perso .topnav .active {
+	background-color:#4792ad;
+}
+
+.projets_perso .midnav .active {
+	background-color:#70adb3;
+}
+
+.contact .topnav .active {
+	background-color:#7570b3;
+}
