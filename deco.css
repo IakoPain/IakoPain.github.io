@@ -32,12 +32,28 @@
 	background-color:#65c273;
 }
 
+.moi .botnav  {
+	background-color:#b4cfab;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+	font-size: 28px;
+}
+
 .etudes_et_pro .topnav .active {
 	background-color:#56bf8c;
 }
 
 .etudes_et_pro .midnav .active {
 	background-color:#65c273;
+}
+
+.etudes_et_pro .botnav {
+	background-color:#b4cfab;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+	font-size: 28px;
 }
 
 .projets_pro .topnav .active {
@@ -58,4 +74,29 @@
 
 .contact .topnav .active {
 	background-color:#7570b3;
+}
+
+.moi {
+	background: #d1ebde;
+	background: linear-gradient(160deg,rgba(209, 235, 222, 1) 50%, rgba(220, 235, 211, 1) 100%);
+}
+
+.etudes_et_pro {
+	background: #d1ebde;
+	background: linear-gradient(160deg,rgba(209, 235, 222, 1) 50%, rgba(220, 235, 211, 1) 100%);
+}
+
+.projets_pro {
+	background: #d1d7eb;
+	background: linear-gradient(160deg,rgba(209, 215, 235, 1) 50%, rgba(211, 227, 235, 1) 100%);
+}
+
+.projets_perso {
+	background: #d1d7eb;
+	background: linear-gradient(160deg,rgba(209, 215, 235, 1) 50%, rgba(211, 227, 235, 1) 100%);
+}
+
+.contact {
+	background: #e1d1eb;
+	background: linear-gradient(160deg,rgba(225, 209, 235, 1) 50%, rgba(235, 211, 231, 1) 100%);
 }
