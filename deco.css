@@ -1,102 +1,186 @@
+/* TopBar Haut */
 .topnav {
     background-color: #333333;
     display: flex;
     justify-content: space-between;
     padding: 10px;
+	position: sticky;
+	top: 0;
+    box-shadow: 0px 5px 0px 0px #666666;
 }
-
 .topnav a {
     color: white;
     text-decoration: none;
     padding: 8px 16px;
 }
 
+/* TopBar Milieu */
 .midnav {
     background-color: #666666;
     display: flex;
     justify-content: space-between;
     padding: 10px;
+	position: sticky;
+	top: 56.5;
 }
-
 .midnav a {
     color: white;
     text-decoration: none;
     padding: 8px 16px;
 }
 
-.moi .topnav .active {
-	background-color:#56bf8c;
+/* Font */
+body {
+    font-family: "Scoutie Sans";
 }
 
-.moi .midnav .active {
-	background-color:#65c273;
+/* Tooltip */
+.hover-tooltip {
+        border-bottom: 2px dotted #ffffff;
+        border-color: white; 
+        cursor: help;
+    }
+	
+/* Background */
+body.vert, body.bleu, body.violet {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+.pattern-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
 }
 
-.moi .botnav  {
-	background-color:#b4cfab;
+.pattern-background::before,
+.pattern-background::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transform: rotate(5deg);
+    transform-origin: center;
+    pointer-events: none;
+}
+
+/* ---- VERT ---- */
+.vert .topnav .active {
+    background-color: #56bf8c;
+    box-shadow: 0px -11px 0px 0px #56bf8c;
+}
+.vert .midnav .active {
+    background-color: #65c273;
+}
+.vert .botnav {
+    background-color: #209038;
+    box-shadow: 0px -11px 0px 0px #20784c;
+	color: #ffffff;
     display: flex;
     justify-content: space-between;
     padding: 25px;
-	font-size: 28px;
+    font-size: 28px;
 }
-
-.etudes_et_pro .topnav .active {
-	background-color:#56bf8c;
-}
-
-.etudes_et_pro .midnav .active {
-	background-color:#65c273;
-}
-
-.etudes_et_pro .botnav {
-	background-color:#b4cfab;
+.vert .botnav_alt {
+    background-color: #3d9020;
+    box-shadow: 0px -11px 0px 0px #207822;
+	color: #ffffff;
     display: flex;
     justify-content: space-between;
     padding: 25px;
-	font-size: 28px;
+    font-size: 28px;
+}
+body.vert {
+    background: #9bd49e;
+    background: linear-gradient(
+        160deg,
+        rgba(155, 212, 158, 1) 0%,
+        rgba(143, 154, 191, 1) 99%
+    );
+    background-attachment: fixed;
+}
+.vert .pattern-background::before {
+    background-image:
+        linear-gradient(#296e1f 3px, transparent 3px),
+        linear-gradient(90deg, #296e1f 3px, transparent 3px);
+    background-size: 100px 100px, 100px 100px;
+    background-position: -3px -3px, -3px -3px;
+    opacity: 0.25;
+}
+.vert .pattern-background::after {
+    opacity: 0.15;
+    background-image:
+        linear-gradient(#296e1f 1px, transparent 1px),
+        linear-gradient(90deg, #296e1f 1px, transparent 1px);
+    background-size: 70px 70px, 70px 70px;
+    background-position: -1px -1px, -1px -1px;
 }
 
-.projets_pro .topnav .active {
-	background-color:#4792ad;
+/* ---- BLEU ---- */
+.bleu .topnav .active {
+    background-color: #4792ad;
+    box-shadow: 0px -11px 0px 0px #4792ad;
+}
+.bleu .midnav .active {
+    background-color: #70adb3;
+}
+body.bleu {
+    background: #8fb5bf;
+    background: linear-gradient(
+        160deg,
+        rgba(143, 181, 191, 1) 0%,
+        rgba(162, 143, 191, 1) 99%
+    );
+    background-attachment: fixed;
+}
+.bleu .pattern-background::before {
+    background-image:
+        linear-gradient(#1f516e 3px, transparent 3px),
+        linear-gradient(90deg, #1f516e 3px, transparent 3px);
+    background-size: 100px 100px, 100px 100px;
+    background-position: -3px -3px, -3px -3px;
+    opacity: 0.25;
+}
+.bleu .pattern-background::after {
+    opacity: 0.15;
+    background-image:
+        linear-gradient(#1f516e 1px, transparent 1px),
+        linear-gradient(90deg, #1f516e 1px, transparent 1px);
+    background-size: 70px 70px, 70px 70px;
+    background-position: -1px -1px, -1px -1px;
 }
 
-.projets_pro .midnav .active {
-	background-color:#70adb3;
+/* ---- VIOLET ---- */
+.violet .topnav .active {
+    background-color: #7570b3;
+    box-shadow: 0px -11px 0px 0px #7570b3;
 }
-
-.projets_perso .topnav .active {
-	background-color:#4792ad;
+body.violet {
+    background: #b17bd1;
+    background: linear-gradient(
+        160deg,
+        rgba(177, 123, 209, 1) 0%,
+        rgba(194, 99, 134, 1) 99%
+    );
+    background-attachment: fixed;
 }
-
-.projets_perso .midnav .active {
-	background-color:#70adb3;
+.violet .pattern-background::before {
+    background-image:
+        linear-gradient(#5c1e6a 3px, transparent 3px),
+        linear-gradient(90deg, #5c1e6a 3px, transparent 3px);
+    background-size: 100px 100px, 100px 100px;
+    background-position: -3px -3px, -3px -3px;
+    opacity: 0.25;
 }
-
-.contact .topnav .active {
-	background-color:#7570b3;
-}
-
-.moi {
-	background: #d1ebde;
-	background: linear-gradient(160deg,rgba(209, 235, 222, 1) 50%, rgba(220, 235, 211, 1) 100%);
-}
-
-.etudes_et_pro {
-	background: #d1ebde;
-	background: linear-gradient(160deg,rgba(209, 235, 222, 1) 50%, rgba(220, 235, 211, 1) 100%);
-}
-
-.projets_pro {
-	background: #d1d7eb;
-	background: linear-gradient(160deg,rgba(209, 215, 235, 1) 50%, rgba(211, 227, 235, 1) 100%);
-}
-
-.projets_perso {
-	background: #d1d7eb;
-	background: linear-gradient(160deg,rgba(209, 215, 235, 1) 50%, rgba(211, 227, 235, 1) 100%);
-}
-
-.contact {
-	background: #e1d1eb;
-	background: linear-gradient(160deg,rgba(225, 209, 235, 1) 50%, rgba(235, 211, 231, 1) 100%);
+.violet .pattern-background::after {
+    opacity: 0.15;
+    background-image:
+        linear-gradient(#5c1e6a 1px, transparent 1px),
+        linear-gradient(90deg, #5c1e6a 1px, transparent 1px);
+    background-size: 70px 70px, 70px 70px;
+    background-position: -1px -1px, -1px -1px;
 }
