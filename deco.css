@@ -83,7 +83,9 @@ body.vert, body.bleu, body.violet {
     display: flex;
     justify-content: space-between;
     padding: 25px;
-    font-size: 28px;
+    font-size: 20px;
+	min-height: 200px;
+	height: auto;
 }
 .vert .botnav_alt {
     background-color: #3d9020;
@@ -92,7 +94,9 @@ body.vert, body.bleu, body.violet {
     display: flex;
     justify-content: space-between;
     padding: 25px;
-    font-size: 28px;
+    font-size: 20px;
+	min-height: 200px;
+	height: auto;
 }
 body.vert {
     background: #9bd49e;
@@ -152,6 +156,32 @@ body.bleu {
         linear-gradient(90deg, #1f516e 1px, transparent 1px);
     background-size: 70px 70px, 70px 70px;
     background-position: -1px -1px, -1px -1px;
+}
+
+.cards-container {
+    display: grid;
+	color: #ffffff;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;            
+    padding: 20px;
+}
+
+.botnav, .botnav_alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;       
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(28, 27, 128, 0.4);
+    box-shadow: 0px -11px 0px 0px #38288a;
+    font-size: 20px;
+}
+
+.botnav img, .botnav_alt img {
+    max-height: 120px;
+    width: auto;
+    margin-left: 15px;
 }
 
 /* ---- VIOLET ---- */
