@@ -166,7 +166,7 @@ body.bleu {
     padding: 20px;
 }
 
-.botnav, .botnav_alt {
+.botnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
